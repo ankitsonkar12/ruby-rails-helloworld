@@ -4,7 +4,7 @@ pipeline{
         stage('install'){
             steps {
                 
-                sh "gem install saas"
+                sh "gem install bundler"
             }
         
         
