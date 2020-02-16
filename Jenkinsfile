@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('requirements'){
             steps {
-                sh 'gem install bundler'
+                sh "gem install bundler"
             }
 
         }
