@@ -5,18 +5,18 @@
 #Rails.application.load_tasks
 #task default: %w[test]
 
-task :test do
-  ruby "test/test_helper.rb"
-end
-#require 'rake/testtask'
-
-#task default: %i(test)
-
-#Rake::TestTask.new do |t|
- # t.pattern = 'test/*_test.rb'
-  #t.warning = false
-  #t.verbose = true
+#task :test do
+#  ruby "test/test_helper.rb"
 #end
+require 'rake/testtask'
+
+task default: %i(test)
+
+Rake::TestTask.new do |t|
+ t.pattern = 'test/test_helper.rb'
+  t.warning = false
+  t.verbose = true
+end
 #RAKEFILE
 # run the tests
 #rake
