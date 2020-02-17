@@ -21,7 +21,7 @@ pipeline{
         stage('build') {
             steps {
                 sh 'bundle install'
-                sh 'rake install'
+
             }
         }
         stage('test'){
