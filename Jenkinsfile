@@ -8,7 +8,7 @@ pipeline{
     stages {
         stage('install'){
             steps {
-                sh "${GEM_HOME}/bin/ login -u jenkins -p admin"
+                sh "login -u jenkins -p admin"
                 sh "'${GEM_HOME}/bin/' gem install bundler -v 2.1.4"
             }
         
