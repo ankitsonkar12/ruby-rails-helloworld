@@ -13,7 +13,7 @@ require 'rake/testtask'
 task default: %i(test)
 
 Rake::TestTask.new do |t|
- t.pattern = 'test/test_helper.rb'
+ t.pattern = 'test/*_helper.rb'
   t.warning = false
   t.verbose = true
 end
