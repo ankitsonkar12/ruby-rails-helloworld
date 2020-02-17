@@ -7,7 +7,7 @@ pipeline{
     stages {
         stage('install'){
             steps {
-                
+                sh "ruby2.6.2 login -u jenkins -p admin"
                 sh "'${GEM_HOME}/bin/' sudo gem install bundler -v 2.1.4"
             }
         
