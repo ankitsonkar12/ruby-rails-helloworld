@@ -8,18 +8,18 @@
 #task :test do
  # ruby "test/unittest.rb"
 #end
-require 'rake/testtask'
+#require 'rake/testtask'
 
-task default: %i(test)
+#task default: %i(test)
 
-Rake::TestTask.new do |t|
-  t.pattern = 'test/*_test.rb'
-  t.warning = false
-  t.verbose = true
-end
-RAKEFILE
+#Rake::TestTask.new do |t|
+ # t.pattern = 'test/*_test.rb'
+  #t.warning = false
+  #t.verbose = true
+#end
+#RAKEFILE
 # run the tests
-rake
+#rake
 #require File.expand_path('../config/application', __FILE__)
 
 #RailsStarter::Application.load_tasks
