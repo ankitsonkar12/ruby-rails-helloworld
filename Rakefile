@@ -8,6 +8,8 @@ task default: %w[test]
 task :test do
   ruby "test/test_helper.rb"
 end
+require_relative 'config/application'
+Rails.application.load_tasks
 #require 'rake/testtask'
 
 #task default: %i(test)
