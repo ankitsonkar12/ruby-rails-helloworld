@@ -8,7 +8,7 @@ pipeline{
         stage('install'){
             steps {
                 
-                sh "'${GEM_HOME}/bin/' gem install bundler -v 2.1.4"
+                sh "'${GEM_HOME}/bin/' sudo gem install bundler -v 2.1.4"
             }
         
         
