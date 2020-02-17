@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    }
+    
     environment
     {
         GEM_HOME= "/home/vagrant/.rvm/rubies/ruby-2.6.3"
