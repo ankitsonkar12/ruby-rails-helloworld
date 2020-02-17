@@ -1,5 +1,6 @@
 pipeline{
     agent any
+    }
     environment
     {
         GEM_HOME= "/home/vagrant/.rvm/rubies/ruby-2.6.3"
@@ -8,7 +9,7 @@ pipeline{
         stage('install'){
             steps {
                 sh "${GEM_HOME}/bin/ login -u jenkins -p admin"
-                sh "'${GEM_HOME}/bin/' sudo gem install bundler -v 2.1.4"
+                sh "'${GEM_HOME}/bin/' gem install bundler -v 2.1.4"
             }
         
         
