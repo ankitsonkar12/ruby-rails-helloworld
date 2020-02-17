@@ -5,9 +5,9 @@
 #Rails.application.load_tasks
 #task default: %w[test]
 
-#task :test do
- # ruby "test/unittest.rb"
-#end
+task :test do
+  ruby "test/test_helper.rb"
+end
 #require 'rake/testtask'
 
 #task default: %i(test)
